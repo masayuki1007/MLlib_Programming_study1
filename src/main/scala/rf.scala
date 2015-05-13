@@ -8,7 +8,7 @@ object HelloRf
 
   // Load and parse the data file.
   // libsvm style iris Data - http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/multiclass/iris.scale
-  val data = MLUtils.loadLibSVMFile(sc, "/data/iris.scale")
+  val data = MLUtils.loadLibSVMFile(sc, "data/iris.scale")
 
   // Split the data into training and test sets (30% held out for testing)
   val splits = data.randomSplit(Array(0.7, 0.3))
